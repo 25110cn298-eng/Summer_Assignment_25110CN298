@@ -1,0 +1,33 @@
+
+#include<stdio.h>
+int main(){
+      int a[10][10], b[10][10], sub[10][10],r, c;
+      printf("Enter number of rows and columns: ");
+      scanf("%d \n %d", &r, &c);
+      printf("Enter elements of first matrix: ");
+      for(int i=0; i<r; i++){
+            for(int j=0; j<c; j++){
+                  scanf("%d", &a[i][j]);
+            }
+      }
+      printf("Enter elements of second matrix: ");
+      for(int i=0; i<r; i++){
+            for(int j=0; j<c; j++){
+                  scanf("%d", &b[i][j]);
+            }
+      }
+      printf("Sum of matrices is:\n ");
+      for(int i=0; i<r; i++){
+            for(int j=0; j<c; j++){
+                  sub[i][j]=a[i][j]-b[i][j];
+            }
+      }
+      for(int i=0; i<r; i++){
+            for(int j=0; j<c; j++){
+                  printf("%d ", sub[i][j]);
+            }
+            printf("\n");
+      }
+      
+      return 0;
+}
